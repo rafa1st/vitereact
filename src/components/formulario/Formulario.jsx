@@ -30,7 +30,7 @@ export const Formulario = () => {
 
   const submit = (e) => {
     e.preventDefault();    
-    console.log(formulario);
+    console.log(formulario);    
   };
 
   //retorno;
