@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { convertCurrency } from "../../utils/utils";
+import { convertCurrency } from "../utils/utils";
 
 export const Formulario = () => {
   const [formulario, setFormulario] = useState([
