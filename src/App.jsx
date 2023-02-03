@@ -7,8 +7,7 @@ export const App = () => {
   return (
     <div className="app-container">
       {/* <DinamicForm /> */}
-      <Formulario />
-      
+      <Formulario />      
       <Footer />
     </div>
   );
