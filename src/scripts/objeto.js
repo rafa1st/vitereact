@@ -25,8 +25,10 @@ const dataInicial = new Date();
 
 for (let i = 0; i < entrada[1].boleto.parcelas; i++) {
   let count = i;
-  entrada[1].boleto.vencimento = dataInicial.getDate(dataInicial + 28)
+  entrada[1].boleto.vencimento.push(dataInicial.getDay())
   
 }
+
+console.log(entrada[1].boleto.vencimento)
 
 
