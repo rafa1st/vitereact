@@ -1,9 +1,10 @@
 export const Footer = () => {
-  const today = new Date();
+  const date = new Date();
+  const today = date.getFullYear();
 
   return (
     <div className="footer">
-      <a href="https://github.com/rafa1st" target="_blank">rafa1st@{today.getFullYear()}</a>
+      <a href="https://github.com/rafa1st" target="_blank">rafa1st@{today}</a>
     </div>
   );
 };
