@@ -9,7 +9,7 @@ export const Formulario = () => {
       valor: 0,
     },
   ]);
-
+  const [date, setDate] = useState("2023-03-15T03:00:00.000Z")
   //funções;
 
   const handleChange = (event, index) => {
@@ -29,8 +29,8 @@ export const Formulario = () => {
   };
 
   const submit = (e) => {
-    e.preventDefault();    
-    console.log(formulario);    
+    e.preventDefault();
+    console.log(formulario);
   };
 
   //retorno;
@@ -69,12 +69,24 @@ export const Formulario = () => {
                   onChange={(event) => handleChange(event, index)}
                 />
               </label>
+              <label>
+                Data:
+                <input type="date" value={date} onChange={e => setDate(e.target.value)}/>
+
+              </label>
             </div>
           );
         })}
       </form>
-      <button onClick={addFormulario}>+ Novo Carro</button>
-      <button onClick={submit}>Submit</button>
+      <div className="buttons">
+        <button className="button-add" onClick={addFormulario}>
+          + Novo Carro
+        </button>
+        <button className="button-submit" onClick={submit}>
+          Submit
+        </button>
+        <p> {date}</p>
+      </div>
     </div>
   );
 };

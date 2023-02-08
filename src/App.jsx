@@ -7,9 +7,9 @@ import { Links } from "./components/Links";
 export const App = () => {
   return (
     <div className="app-container">
-      
-      <Links />
 
+      <Formulario />      
+      <Links />
       <Footer />
     </div>
   );
