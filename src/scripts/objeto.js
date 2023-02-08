@@ -22,6 +22,15 @@ entrada[1].boleto.parcelas = 3;
 entrada[0].nota.valor = 300.00;
 
 const dataInicial = new Date();
+const days = dataInicial.getDate();
+days + 28;
+const meses = dataInicial.getMonth();
+
+console.log(dataInicial)
+
+
+
+
 
 for (let i = 0; i < entrada[1].boleto.parcelas; i++) {
   let count = i;
